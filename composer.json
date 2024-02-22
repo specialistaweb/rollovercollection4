@@ -1,0 +1,53 @@
+{
+    "name": "specialistaweb/rollovercollection4",
+    "type": "typo3-cms-extension",
+    "minimum-stability":"dev",
+    "description": "only for bootstrap5 + boostrap package v.12+ - cool multicolumn rendering with seven boxes layouts for cType textmedia, media, textpic and images; bootstrap package needed. Useful for menu, gallery, other. Highly customizable",
+    "authors": [
+        {
+            "name": "Alessandro Tuveri",
+            "role": "Developer"
+        },
+        {
+            "name": "Giulia Tuveri",
+            "role": "Developer"
+        }
+    ],
+    "keywords": [
+        "image",
+        "rollover",
+        "effect",
+        "block",
+        "div",
+        "columns",
+        "bootstrap5",
+        "bootstrap",
+        "hover",
+	"box"
+    ],
+    "homepage": "https://typo3.specialistaweb.it/typo3-extensions/rollovereffects/blocks",
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "package": {
+        "name": "specialistaweb/rollovercollection4",
+        "version": "7.0.2",
+        "dist": {
+            "url": "https://extensions.typo3.org/extension/download/rollovercollection4/7.0.2/zip",
+            "type": "zip"
+        }
+    },
+
+    "require": { "typo3/cms-core": "^11.0.0|^12.4.99", "bk2k/bootstrap-package": "^12|^14"
+    },
+    "autoload": {
+        "psr-4": {
+            "SpecialistaWeb\\Newsstylist\\": "Classes"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "rollovercollection4"
+        }
+    }
+}
