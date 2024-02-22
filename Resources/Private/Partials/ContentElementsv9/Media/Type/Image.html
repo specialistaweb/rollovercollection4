@@ -1,0 +1,268 @@
+{namespace bk2k = BK2K\BootstrapPackage\ViewHelpers}
+
+
+<f:comment>
+            #######################################################################
+            il seguente codice e' il LAYOUT NORMALE, modificato
+            attenzione: qui sotto e' stata inserita la condizione per data.layout
+            dalla v.8.x possibile usare uln solo if con gli operatori booleani
+            / vedi reference online
+           ########################################################################
+
+</f:comment>
+
+<f:if condition="{data.layout} == 0">
+
+<figure class="image">
+  <f:if condition="{file.link}">
+        <f:then>
+            <f:link.typolink parameter="{file.link}" title="{file.title}">
+                <f:render partial="Media/Rendering/Image" arguments="{file: file, settings: settings}" />
+            </f:link.typolink>
+        </f:then>
+        <f:else>
+            <f:if condition="{data.image_zoom}">
+                <f:then>
+                    <a href="{f:uri.image(image: file, maxHeight: '1200', maxWidth: '1200')}" title="{file.title}" class="{settings.lightbox.cssClass}" data-lightbox-width="{bk2k:lastImageInfo(property: 'width')}" data-lightbox-height="{bk2k:lastImageInfo(property: 'height')}" rel="{settings.lightbox.prefix}-{data.uid}">
+                        <f:render partial="Media/Rendering/Image" arguments="{file: file, settings: settings}" />
+                    </a>
+                </f:then>
+                <f:else>
+                    <f:render partial="Media/Rendering/Image" arguments="{file: file, settings: settings}" />
+                </f:else>
+            </f:if>
+        </f:else>
+      </f:if>
+
+    <figcaption class="caption">
+        {file.description}
+    </figcaption>
+</figure>
+</f:if>
+
+
+
+<f:comment>
+            #####################################################
+            layout 2851 - BLOCK#1 - TERGESTE
+            #####################################################
+
+</f:comment>
+
+<f:if condition="{data.layout} == 2851">
+<div class="rollovercollection4 block1 fullheight">
+  <figure class="image view{data.layout} view{data.layout}-type">
+            <f:link.typolink parameter="{file.link}" title="{file.title -> f:format.stripTags()}">
+                <f:render partial="Media/Rendering/Image" arguments="{file: file, settings: settings}" />
+            </f:link.typolink>
+
+    <figcaption class="caption" style="position: relative;">
+                <h2><f:render partial="Media/Rendering/title" arguments="{file: file, settings: settings}" /></h2>
+                <f:render partial="Media/Rendering/description" arguments="{file: file, settings: settings}" />
+    </figcaption>
+             <f:if condition="{file.alternative}">
+               <div class="inset-button">
+                 <div class="button">
+                   <f:link.typolink parameter="{file.link}" title="{file.title -> f:format.stripTags()}" class="btn btn-details">
+                       {file.alternative}
+                   </f:link.typolink>
+                  </div>
+               </div>               
+               </f:if>
+  </figure>
+ </div>
+</f:if>
+
+<f:comment>
+            #####################################################
+            layout 2852 - BLOCK#2 - FURIO
+            #####################################################
+
+</f:comment>
+
+<f:if condition="{data.layout} == 2852">
+   <figure class="image view{data.layout}">  
+     <div class="img-block2">
+
+       <div class="box h-block2">
+          <f:if condition="{file.link}">    
+            <f:link.typolink parameter="{file.link}" title="{file.title -> f:format.stripTags()}">
+                <f:render partial="Media/Rendering/Image" arguments="{file: file, settings: settings}" />
+            </f:link.typolink>
+          </f:if>   
+       </div>
+
+       <f:if condition="{file.link}">              
+           <figcaption class="overlay{data.layout}">
+             <div class="valign-ro">
+               <div class="vcontainer-ro">
+                 <f:link.typolink parameter="{file.link}" title="{file.title -> f:format.stripTags()}">
+                    <h2><f:render partial="Media/Rendering/title" arguments="{file: file, settings: settings}" /></h2>
+                 </f:link.typolink>
+               </div>
+             </div>
+            </figcaption>
+         </f:if> 
+       </div>
+     </figure>
+     <div class="caption caption-view{data.layout}" style="position: relative;">
+           <f:render partial="Media/Rendering/description" arguments="{file: file, settings: settings}" />
+     </div>
+</f:if>
+
+
+<f:comment>
+            #####################################################
+            layout 2853 - BLOCK#3 - UCCIO
+            #####################################################
+
+</f:comment>
+
+
+<f:if condition="{data.layout} == 2853">
+   <figure class="image view{data.layout}">  
+
+     <div class="img-block2">
+
+       <div class="box h-block2">
+          <f:if condition="{file.link}">    
+            <f:link.typolink parameter="{file.link}" title="{file.title -> f:format.stripTags()}">
+                <f:render partial="Media/Rendering/Image" arguments="{file: file, settings: settings}" />
+            </f:link.typolink>
+          </f:if>   
+       </div>
+
+       <f:if condition="{file.link}">              
+           <figcaption class="overlay{data.layout}">
+             <div class="valign-ro">
+               <div class="vcontainer-ro">
+                 <f:link.typolink parameter="{file.link}" title="{file.title -> f:format.stripTags()}">
+                    <h2><f:render partial="Media/Rendering/title" arguments="{file: file, settings: settings}" /></h2>
+                 </f:link.typolink>
+               </div>
+             </div>
+            </figcaption>
+         </f:if>
+       </div>
+     </figure>
+       <div class="caption caption-view{data.layout}" style="position: relative;">
+           <f:render partial="Media/Rendering/description" arguments="{file: file, settings: settings}" />
+     </div>
+</f:if>
+
+
+
+<f:comment>
+            #####################################################
+            layout 2854 - BLOCK#4 - ETTORE
+            #####################################################
+
+</f:comment>
+
+<f:if condition="{data.layout} == 2854">
+  
+   <div class="view{data.layout} fullheight">
+       <div class="image">
+          <f:link.typolink parameter="{file.link}" title="{file.title -> f:format.stripTags()}">
+                <f:render partial="Media/Rendering/Image" arguments="{file: file, settings: settings}" />
+          </f:link.typolink>
+       </div>
+       <div class="info-view{data.layout}">
+         <h5><f:render partial="Media/Rendering/title" arguments="{file: file, settings: settings}" /></h5>
+         <f:render partial="Media/Rendering/description" arguments="{file: file, settings: settings}" />
+       </div>
+   </div>
+</f:if>
+
+<f:comment>
+            #####################################################
+            layout 2855 - BLOCK#5 SELMA
+            #####################################################
+
+</f:comment>
+
+
+<f:if condition="{data.layout} == 2855">
+<div class="rollovercollection4 selma fullheight">
+  <figure class="image view{data.layout} view{data.layout}-type">
+            <f:link.typolink parameter="{file.link}" title="{file.title -> f:format.stripTags()}">
+                <f:render partial="Media/Rendering/Image" arguments="{file: file, settings: settings}" />
+            </f:link.typolink>
+
+    <figcaption class="caption" style="position: relative;">
+                <h2>
+                  <f:render partial="Media/Rendering/title" arguments="{file: file, settings: settings}" />
+                </h2>
+                <p>
+                  <f:render partial="Media/Rendering/description" arguments="{file: file, settings: settings}" />
+                </p>
+    </figcaption>
+             <f:if condition="{file.alternative}">
+               <div class="inset-button">
+                <f:link.typolink parameter="{file.link}" title="{file.title -> f:format.stripTags()}" class="btn btn-details">
+                 <div class="button">
+                       <span class="link">{file.alternative}</span> 
+                       <span class="symbol">&gt;</span>
+                  </div>
+                </f:link.typolink>
+               </div>               
+               </f:if>
+  </figure>
+ </div>
+</f:if>
+
+
+<f:comment>
+            #####################################################
+            layout 2856 - BLOCK#6 MARIUCCI
+            #####################################################
+
+</f:comment>
+
+<f:if condition="{data.layout} == 2856">
+<ul class="planContainer fullheight">
+   <li class="alternative">           
+    <p>{file.alternative}</p>
+  </li>
+       <li class="title">
+         <p><f:render partial="Media/Rendering/title" arguments="{file: file, settings: settings}" /></p>
+        </li>  
+  <li class="options-container fullheight">
+    
+    <ul class="options">
+      <li class="image">
+           <f:link.typolink parameter="{file.link}" title="{file.title -> f:format.stripTags()}">
+             <f:render partial="Media/Rendering/Image" arguments="{file: file, settings: settings}" />
+          </f:link.typolink>
+      <li class="text"><f:render partial="Media/Rendering/description" arguments="{file: file, settings: settings}" /></li>
+    </ul>
+  </li>
+  <li class="button-container">
+    <f:link.typolink parameter="{file.link}" title="{file.title -> f:format.stripTags()}" class="button btn btn-more" >
+      <f:cObject typoscriptObjectPath="lib.rollovercollection4.label.readMore" />
+    </f:link.typolink>       
+  </li>
+</ul>
+</f:if>
+    
+    
+    
+ 
+  
+<f:comment>
+            ##################################################### 
+            layout 2857 - BLOCK#7 NEVIO
+            #####################################################
+
+</f:comment> 
+ 
+ <f:if condition="{data.layout} == 2857">  
+  
+   <f:link.typolink parameter="{file.link}" title="{file.title ->  f:format.stripTags()}"> 
+      <div class="services-item">
+        <p>
+          <f:render partial="Media/Rendering/Image" arguments="{file: file, settings: settings}" />
+             {file.title ->  f:format.stripTags()}
+        </p></div>
+   </f:link.typolink>
+ </f:if>

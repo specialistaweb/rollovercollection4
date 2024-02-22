@@ -1,0 +1,13 @@
+ <f:if condition="{file.description}">
+                  <p>
+                         <f:if condition="{settings.R4captionRawdataOutput} == 1">
+                                  <f:then>
+                                        <f:format.raw>{file.description}</f:format.raw>
+                                  </f:then>
+                                  <f:else>
+                                        <f:format.stripTags>{file.description}</f:format.stripTags>
+                                  </f:else>
+                         </f:if>
+                   </p>
+
+</f:if>

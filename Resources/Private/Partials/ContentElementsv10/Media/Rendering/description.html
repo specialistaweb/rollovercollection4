@@ -1,0 +1,21 @@
+<f:comment>
+  
+  settings are not correctly interpreted. So this piece of code is substituted.
+  <p><f:format.raw>{file.description}</f:format.raw></p>
+
+</f:comment>
+
+<f:if condition="{file.description}">
+                  <p>
+                         <f:if condition="{settings.R4captionRawdataOutput} == 1">
+                         {settings.R4captionRawdataOutput}
+                                  <f:then>
+                                        <f:format.raw>{file.description}</f:format.raw>
+                                  </f:then>
+                                  <f:else>
+                                        <f:format.stripTags>{file.description}</f:format.stripTags> 
+                                  </f:else>
+                         </f:if>
+                   </p>
+
+</f:if>

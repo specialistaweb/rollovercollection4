@@ -1,0 +1,60 @@
+// vertical distance from one block to another, otherwise they appears closer...
+
+.rollover4 {
+   height: inherit;
+   margin-bottom: 32px;
+}
+
+.caption {
+   font-style: normal;
+   font-size: $font-size-base;
+}
+
+.gallery-row.flex {
+   display: flex;
+}
+
+.fullheight {
+   height: 100% !important;
+}
+
+div.vcontainer-ro {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+ div.valign-ro {
+    height: inherit;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+//breakpoints
+
+  // ------- rollover4
+
+
+.gallery-item {
+   --gallery-gap: 0.6em;
+    width: calc((100% / var(--gallery-columns)) - (var(--gallery-gap) * (var(--gallery-columns) - 1)) / var(--gallery-columns));
+}
+
+
+@media screen and (max-width: 1024px) {
+ .gallery-row.rollover4 gallery-item.rollover4 {
+    --gallery-columns: 3;
+ }
+}
+
+@media screen and (max-width: 720px) {
+ .gallery-row.rollover4 gallery-item.rollover4 {
+    --gallery-columns: 2;
+ }
+}
+
+@media screen and (max-width: 480px) {
+ .gallery-row.rollover4 .gallery-item.rollover4 {
+    --gallery-columns: 1;
+ }
+}

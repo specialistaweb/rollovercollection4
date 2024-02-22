@@ -1,0 +1,10 @@
+
+
+                         <f:if condition="{settings.R4titleRawdataOutput} == 1">
+                                  <f:then>
+                                        <f:format.raw>{file.title}</f:format.raw>
+                                  </f:then>
+                                  <f:else>
+                                        <f:format.stripTags>{file.title}</f:format.stripTags>
+                                  </f:else>
+                         </f:if>

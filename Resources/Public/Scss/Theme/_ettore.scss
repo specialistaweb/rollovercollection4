@@ -1,0 +1,52 @@
+div.view2854 {
+   position: relative;
+   background-color: white;
+   border: $rollover4-ettore-blockBorder;
+   width: 100%;
+   max-width: $rollover4-ettore-maxBlockWidth;
+   padding: 36px;
+   padding-bottom: 18px;
+   height: inherit;
+   transition: background 0.8s ease 0.2s;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+div.view2854:hover {
+      background: $rollover4-ettore-gradient;
+      border-color: $rollover4-ettore-color1; 
+}
+
+div.view2854 div.image {
+     text-align: center;
+}
+
+div.view2854 div.image img {
+     border-radius: 50%;
+     border: $rollover4-ettore-imageBorder;
+     transition: border 0.8s ease 0.2s;
+     max-width: $rollover4-ettore-iconSize;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 32px;
+}
+
+div.view2854 div.image img:hover {
+     border: $rollover4-ettore-imageROBorder;
+}
+
+div.view2854 h5 {
+   text-align: center;
+   color: $rollover4-ettore-titleColor;
+   font-size: $rollover4-ettore-titleSize;
+   font-weight: $rollover4-ettore-titleWeight;
+}
+
+div.info-view2854 p {
+   color: $rollover4-ettore-captionColor;
+   font-size: $rollover4-ettore-captionSize;
+}
+
+div.view2854:hover p, div.view2854:hover h5 {
+   color:white;
+}

@@ -1,0 +1,78 @@
+figure.view2852, div.caption.caption-view2852{
+  max-width: $rollover4-furio-maxBlockWidth;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure.view2852.image a > picture > img  {
+  width: 100%; 
+}
+
+figure.view2852.image {
+ margin-bottom: 24px;  
+}
+
+figure.view2852 .img-block2 {
+    position: relative;  
+}
+
+figure.view2852 figcaption.overlay2852 {
+    position: absolute;
+    top: 0px;
+    background: $rollover4-furio-maskBgColor none repeat scroll 0 0;
+    padding: 0px;    
+    text-align: center;
+    transition: background 0.5s;
+    height: 100%;
+    width: 100%;
+}
+
+div.caption.caption-view2852 p {
+    color:  $rollover4-furio-captionColor;
+    font-size:  $rollover4-furio-captionSize;
+}
+
+
+figure.view2852  div.valign-ro {
+    height: inherit !important;
+    display: table !important;
+    table-layout: fixed;
+    width: 100%;
+}
+
+figcaption.overlay2852  div.vcontainer-ro {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+figure.view2852 figcaption.overlay2852:hover {
+    background: $rollover4-furio-maskBgROColor  none repeat scroll 0 0;
+   /*transition: opacity 0s ease 0s;*/
+}
+
+
+figcaption.overlay2852 .vcontainer-ro h2 {
+  display: inline-block;
+  font-size: $rollover4-furio-titleSize;
+  font-weight: $rollover4-furio-titleWeight;
+  color: $rollover4-furio-titleColor;
+  background-color:  $rollover4-furio-titleBgColor;
+  border: $rollover4-furio-border;
+  letter-spacing: 0.6pt;
+  width: auto;
+  max-width: 80%;
+  padding: 8px;
+  margin: 0px;
+  margin-left: auto; 
+  margin-right: auto;   
+  z-index: 3;
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+figcaption.overlay2852:hover .vcontainer-ro h2 {
+  opacity: 0.2;
+}
+
+ 
+  

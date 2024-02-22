@@ -1,0 +1,120 @@
+.planContainer {
+    position: relative;
+    background-color: #fafafa;
+    margin-bottom: 30px;
+    list-style: outside none none;
+    padding-left: 0px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    max-width: $rollover4-mariucci-maxBlockWidth;
+    margin-left: auto;
+    margin-right: auto;
+    height: inherit;
+}
+.planContainer:hover {
+    background-color: white;
+}
+
+.planContainer .alternative {
+  background: $rollover4-mariucci-altBgColor;
+}
+
+.planContainer .alternative p {
+  color: $rollover4-mariucci-altTextColor;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+  padding-bottom: 18px;
+  padding-top: 18px;
+  text-align: center;
+}
+
+.planContainer .title p {
+    background-color: $rollover4-mariucci-titleBgColor;
+    color: $rollover4-mariucci-titleColor;
+    font-size: $rollover4-mariucci-titleSize;
+    font-weight: $rollover4-mariucci-titleWeight;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin: 0;
+    padding: 0.6em 0;
+    margin: 0px;
+    text-align: center;
+}
+
+.planContainer li.options-container {
+    margin-bottom: 84px;
+}
+
+.planContainer ul.options {
+    padding-top: 30px;
+    list-style: outside none none;
+    padding-left: 0;
+    text-align: center;
+}
+
+
+
+.planContainer .options li {
+    line-height: 1.4em;
+}
+
+.planContainer .options li.text {
+    padding-topl: 20px;
+    padding-bottom: 10px;
+}
+
+.planContainer .options li.text p {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.planContainer ul.options li.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: transparent;
+}
+
+.planContainer ul.options li.image img {
+   max-width: $rollover4-mariucci-imageSize;
+   border-radius: 50%;
+}
+
+.planContainer li.button-container {
+    display: block;
+    position: absolute;
+    bottom: 24px;
+    width: 100%
+}
+
+.planContainer  li.button-container a {
+    display: block;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.planContainer a.button.btn.btn-more {
+  background-color: $rollover4-mariucci-linkColor1;
+  color: $rollover4-mariucci-linkColor2;
+  font-weight: $rollover4-mariucci-linkWeight;
+  font-size: $rollover4-mariucci-linkSize;
+  margin: 0 auto;
+  width: 70%;
+  border-radius: 0;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.6s ease 0.2s;
+  }
+
+.planContainer a.btn.btn-more:hover {
+  background-color: $rollover4-mariucci-linkColor2;
+  color: $rollover4-mariucci-linkColor1;
+}
+
+ul.planContainer {
+  transition: all 0.2s ease 0s;
+}
+
+ul.planContainer:hover {
+  transform: scale(1.04);
+}
