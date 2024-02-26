@@ -37,7 +37,6 @@
             "type": "zip"
         }
     },
-
     "require": { "typo3/cms-core": "^11.0.0|^12.4.99", "bk2k/bootstrap-package": "^12|^14"
     },
     "autoload": {
