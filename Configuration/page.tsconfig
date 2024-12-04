@@ -1,0 +1,52 @@
+###########
+# TCEFORM #
+###########
+
+TCEFORM.tt_content.layout.types.textpic {
+  addItems.2851 = BLOCKS: tergeste
+  addItems.2852 = BLOCKS: furio
+  addItems.2853 = BLOCKS: uccio
+  addItems.2854 = BLOCKS: ettore
+  addItems.2855 = BLOCKS: selma
+  addItems.2856 = BLOCKS: mariucci
+  addItems.2857 = BLOCKS: nevio
+}
+
+TCEFORM.tt_content.layout.types.textmedia {
+  addItems.2851 = BLOCKS: tergeste
+  addItems.2852 = BLOCKS: furio
+  addItems.2853 = BLOCKS: uccio
+  addItems.2854 = BLOCKS: ettore
+  addItems.2855 = BLOCKS: selma
+  addItems.2856 = BLOCKS: mariucci
+  addItems.2857 = BLOCKS: nevio
+}
+
+TCEFORM.tt_content.layout.types.image {
+  addItems.2851 = BLOCKS: tergeste
+  addItems.2852 = BLOCKS: furio
+  addItems.2853 = BLOCKS: uccio
+  addItems.2854 = BLOCKS: ettore
+  addItems.2855 = BLOCKS: selma
+  addItems.2856 = BLOCKS: mariucci
+  addItems.2857 = BLOCKS: nevio
+}
+
+TCEFORM.tt_content.layout.types.media {
+  addItems.2851 = BLOCKS: tergeste
+  addItems.2852 = BLOCKS: furio
+  addItems.2853 = BLOCKS: uccio
+  addItems.2854 = BLOCKS: ettore
+  addItems.2855 = BLOCKS: selma
+  addItems.2856 = BLOCKS: mariucci
+  addItems.2857 = BLOCKS: nevio
+}
+
+/* next:
+
+
+  addItems.2858 = BLOCKS: brunilde n/a
+  addItems.2859 = BLOCKS: micheluci n/a
+  addItems.2860 = BLOCKS: fulvio n/a
+
+*/

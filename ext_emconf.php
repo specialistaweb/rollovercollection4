@@ -15,8 +15,8 @@ $EM_CONF[$_EXTKEY] = array (
   'title' => 'image rollover collection 4 - BLOCKS',
   'description' => 'only for bootstrap5 + boostrap package v.12+ - cool multicolumn rendering with seven boxes layouts for cType textmedia, media, textpic and images; bootstrap package needed. Useful for menu, gallery, other. Highly customizable.',
   'category' => 'plugin',
-  'version' => '7.0.4',
-  'state' => 'stable',
+  'version' => '8.0.0',
+  'state' => 'beta',
   'uploadfolder' => false,
   'clearcacheonload' => true,
   'author' => 'Giulia Tuveri',
@@ -26,8 +26,8 @@ $EM_CONF[$_EXTKEY] = array (
   array (
     'depends' => 
     array (
-      'typo3' => '11.0.0-12.4.99',
-      'bootstrap_package' => '12.0.0-14.0.99',
+      'typo3' => '12.0.0-13.4.99',
+      'bootstrap_package' => '13.0.0-15.0.99',
     ),
     'conflicts' => 
     array (
