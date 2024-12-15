@@ -14,9 +14,9 @@ defined('TYPO3') or die();
         );
 
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('rollovercollection4', 'Configuration/TypoScript', 'BLOCKS');
+	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScript('rollovercollection4', 'constants', '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rollovercollection4/Configuration/TypoScript/constants.typoscript>"');
+	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScript('rollovercollection4', 'setup', '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rollovercollection4/Configuration/TypoScript/setup.typoscript>"');
 
-
-	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScript('rollovercollection4', 'setup', '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rollovercollection4/Configuration/TypoScript/setup.ts>"');
   // Add your code here
 })();
 
