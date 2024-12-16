@@ -5,6 +5,7 @@ use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 defined('TYPO3') or die();
 
+/*
 (function () {
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
@@ -20,4 +21,4 @@ defined('TYPO3') or die();
   // Add your code here
 })();
 
-
+*/
