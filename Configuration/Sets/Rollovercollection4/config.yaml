@@ -1,2 +1,4 @@
 name: Specialistaweb/Rollovercollection4
 label: Rollovercollection 4 - BLOCKS
+dependencies:
+  - bootstrap-package/full
