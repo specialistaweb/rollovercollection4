@@ -22,6 +22,7 @@ $EM_CONF[$_EXTKEY] = array (
   'author' => 'Giulia Tuveri',
   'author_email' => 'gt@specialistaweb.it',
   'author_company' => 'Specialistaweb',
+  'clearCacheOnLoad' => '1',
   'constraints' => 
   array (
     'depends' => 
