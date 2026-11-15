@@ -1,8 +1,21 @@
 {
     "name": "specialistaweb/rollovercollection4",
     "type": "typo3-cms-extension",
-    "minimum-stability":"dev",
-    "description": "only for bootstrap5 + boostrap package v.12+ - cool multicolumn rendering with seven boxes layouts for cType textmedia, media, textpic and images; bootstrap package needed. Useful for menu, gallery, other. Highly customizable",
+    "description": "BLOCKS: multicolumn rendering with seven box layouts for the content elements textmedia, media, textpic and image. Requires bootstrap_package (Bootstrap 5). Useful for menus, galleries and teasers. Highly customizable.",
+    "keywords": [
+        "TYPO3",
+        "image",
+        "rollover",
+        "effect",
+        "block",
+        "columns",
+        "bootstrap5",
+        "bootstrap",
+        "hover",
+        "box"
+    ],
+    "homepage": "https://typo3.specialistaweb.it/typo3-extensions/rollovereffects/blocks",
+    "license": "GPL-2.0-or-later",
     "authors": [
         {
             "name": "Alessandro Tuveri",
@@ -13,30 +26,12 @@
             "role": "Developer"
         }
     ],
-    "keywords": [
-        "image",
-        "rollover",
-        "effect",
-        "block",
-        "div",
-        "columns",
-        "bootstrap5",
-        "bootstrap",
-        "hover",
-	"box"
-    ],
-    "homepage": "https://typo3.specialistaweb.it/typo3-extensions/rollovereffects/blocks",
-    "license": [
-        "GPL-2.0-or-later"
-    ],
-    "require": { 
-        "bk2k/bootstrap-package": ">= 12 < 16",
-        "typo3/cms-core": ">= 12 < 13"
-    },
-    "autoload": {
-        "psr-4": {
-            "SpecialistaWeb\\Rollovercollection4\\": "Classes"
-        }
+    "require": {
+        "php": "^8.2",
+        "bk2k/bootstrap-package": "^16.0",
+        "typo3/cms-core": "^13.4 || ^14.3",
+        "typo3/cms-fluid": "^13.4 || ^14.3",
+        "typo3/cms-frontend": "^13.4 || ^14.3"
     },
     "extra": {
         "typo3/cms": {
