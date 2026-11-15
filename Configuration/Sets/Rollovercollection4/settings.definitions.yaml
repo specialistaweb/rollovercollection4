@@ -1,0 +1,686 @@
+# Rollovercollection 4 - BLOCKS: site settings (Site Management > Settings).
+# Every setting is also available as TypoScript constant with the same key.
+# Keep the defaults in sync with Configuration/TypoScript/constants.typoscript.
+categories:
+  Rollovercollection4:
+    label: 'Rollovercollection 4 - BLOCKS'
+  Rollovercollection4.general:
+    label: 'General'
+    parent: Rollovercollection4
+  Rollovercollection4.common:
+    label: 'Common settings'
+    parent: Rollovercollection4
+  Rollovercollection4.tergeste:
+    label: 'Tergeste style settings'
+    parent: Rollovercollection4
+  Rollovercollection4.furio:
+    label: 'Furio style settings'
+    parent: Rollovercollection4
+  Rollovercollection4.uccio:
+    label: 'Uccio style settings'
+    parent: Rollovercollection4
+  Rollovercollection4.ettore:
+    label: 'Ettore style settings'
+    parent: Rollovercollection4
+  Rollovercollection4.selma:
+    label: 'Selma style settings'
+    parent: Rollovercollection4
+  Rollovercollection4.mariucci:
+    label: 'Mariucci style settings'
+    parent: Rollovercollection4
+  Rollovercollection4.nevio:
+    label: 'Nevio style settings'
+    parent: Rollovercollection4
+
+settings:
+
+  plugin.tx_rollovercollection4_rollovereffect4.view.scssPath:
+    label: 'Path to the SCSS folder'
+    description: 'Folder containing theme.scss, with trailing slash. Change it only to use your own copy of the theme.'
+    category: Rollovercollection4.general
+    type: string
+    default: 'EXT:rollovercollection4/Resources/Public/Scss/Theme/'
+
+  plugin.tx_rollovercollection4_rollovereffect4.settings.titleRawdataOutput:
+    label: 'Title: keep HTML typed by editors'
+    description: 'On: HTML in the image title is kept and cleaned by the TYPO3 HTML sanitizer. Off: plain text only.'
+    category: Rollovercollection4.general
+    type: bool
+    default: false
+
+  plugin.tx_rollovercollection4_rollovereffect4.settings.captionRawdataOutput:
+    label: 'Caption: keep HTML typed by editors'
+    description: 'On: HTML in the image description is kept and cleaned by the TYPO3 HTML sanitizer. Off: plain text only.'
+    category: Rollovercollection4.general
+    type: bool
+    default: true
+
+  plugin.tx_rollovercollection4_rollovereffect4.settings.imageMaxWidth:
+    label: 'Maximum image width (px)'
+    description: 'Images wider than this are scaled down before delivery. 0 = deliver the original file.'
+    category: Rollovercollection4.general
+    type: int
+    default: 1600
+
+  plugin.bootstrap_package.settings.scss.rollover4-brand-primary:
+    label: '$rollover4-brand-primary'
+    description: 'Base color'
+    category: Rollovercollection4.common
+    type: string
+    default: '$primary'
+
+  plugin.bootstrap_package.settings.scss.rollover4-tergeste-maxBlockWidth:
+    label: '$rollover4-tergeste-maxBlockWidth'
+    description: 'Max block width (px or %)'
+    category: Rollovercollection4.tergeste
+    type: string
+    default: '100%'
+
+  plugin.bootstrap_package.settings.scss.rollover4-tergeste-titleColor:
+    label: '$rollover4-tergeste-titleColor'
+    description: 'Title color'
+    category: Rollovercollection4.tergeste
+    type: string
+    default: 'white'
+
+  plugin.bootstrap_package.settings.scss.rollover4-tergeste-titleSize:
+    label: '$rollover4-tergeste-titleSize'
+    description: 'Title font size'
+    category: Rollovercollection4.tergeste
+    type: string
+    default: '18px'
+
+  plugin.bootstrap_package.settings.scss.rollover4-tergeste-titleWeight:
+    label: '$rollover4-tergeste-titleWeight'
+    description: 'Title weight'
+    category: Rollovercollection4.tergeste
+    type: string
+    default: '700'
+
+  plugin.bootstrap_package.settings.scss.rollover4-tergeste-titleBgColor:
+    label: '$rollover4-tergeste-titleBgColor'
+    description: 'Title background color'
+    category: Rollovercollection4.tergeste
+    type: string
+    default: '#2fbde4'
+
+  plugin.bootstrap_package.settings.scss.rollover4-tergeste-captionSize:
+    label: '$rollover4-tergeste-captionSize'
+    description: 'Caption font size'
+    category: Rollovercollection4.tergeste
+    type: string
+    default: '16px'
+
+  plugin.bootstrap_package.settings.scss.rollover4-tergeste-captionColor:
+    label: '$rollover4-tergeste-captionColor'
+    description: 'Caption color'
+    category: Rollovercollection4.tergeste
+    type: string
+    default: '#666'
+
+  plugin.bootstrap_package.settings.scss.rollover4-tergeste-buttonTextColor:
+    label: '$rollover4-tergeste-buttonTextColor'
+    description: 'Button text color'
+    category: Rollovercollection4.tergeste
+    type: string
+    default: 'white'
+
+  plugin.bootstrap_package.settings.scss.rollover4-tergeste-buttonTextSize:
+    label: '$rollover4-tergeste-buttonTextSize'
+    description: 'Button text size'
+    category: Rollovercollection4.tergeste
+    type: string
+    default: '14px'
+
+  plugin.bootstrap_package.settings.scss.rollover4-tergeste-buttonBgColor:
+    label: '$rollover4-tergeste-buttonBgColor'
+    description: 'Button background color'
+    category: Rollovercollection4.tergeste
+    type: string
+    default: '#005091'
+
+  plugin.bootstrap_package.settings.scss.rollover4-tergeste-buttonBgROColor:
+    label: '$rollover4-tergeste-buttonBgROColor'
+    description: 'Button background rollover color'
+    category: Rollovercollection4.tergeste
+    type: string
+    default: '$rollover4-tergeste-titleBgColor'
+
+  plugin.bootstrap_package.settings.scss.rollover4-tergeste-imageSize:
+    label: '$rollover4-tergeste-imageSize'
+    description: 'Substitute with ''unset'' to disable animation'
+    category: Rollovercollection4.tergeste
+    type: string
+    default: '100%'
+
+  plugin.bootstrap_package.settings.scss.rollover4-tergeste-imageROSize:
+    label: '$rollover4-tergeste-imageROSize'
+    description: 'Keep empty to disable animation'
+    category: Rollovercollection4.tergeste
+    type: string
+    default: ''
+
+  plugin.bootstrap_package.settings.scss.rollover4-furio-maxBlockWidth:
+    label: '$rollover4-furio-maxBlockWidth'
+    description: 'Max block width (px or %)'
+    category: Rollovercollection4.furio
+    type: string
+    default: '100%'
+
+  plugin.bootstrap_package.settings.scss.rollover4-furio-titleColor:
+    label: '$rollover4-furio-titleColor'
+    description: 'Title color'
+    category: Rollovercollection4.furio
+    type: string
+    default: 'white'
+
+  plugin.bootstrap_package.settings.scss.rollover4-furio-titleSize:
+    label: '$rollover4-furio-titleSize'
+    description: 'Title font size'
+    category: Rollovercollection4.furio
+    type: string
+    default: '18px'
+
+  plugin.bootstrap_package.settings.scss.rollover4-furio-titleWeight:
+    label: '$rollover4-furio-titleWeight'
+    description: 'Title weight'
+    category: Rollovercollection4.furio
+    type: string
+    default: '700'
+
+  plugin.bootstrap_package.settings.scss.rollover4-furio-titleBgColor:
+    label: '$rollover4-furio-titleBgColor'
+    description: 'Title background color'
+    category: Rollovercollection4.furio
+    type: string
+    default: 'transparent'
+
+  plugin.bootstrap_package.settings.scss.rollover4-furio-captionSize:
+    label: '$rollover4-furio-captionSize'
+    description: 'Caption font size'
+    category: Rollovercollection4.furio
+    type: string
+    default: '14px'
+
+  plugin.bootstrap_package.settings.scss.rollover4-furio-captionColor:
+    label: '$rollover4-furio-captionColor'
+    description: 'Caption color'
+    category: Rollovercollection4.furio
+    type: string
+    default: '#666'
+
+  plugin.bootstrap_package.settings.scss.rollover4-furio-border:
+    label: '$rollover4-furio-border'
+    description: 'Border properties'
+    category: Rollovercollection4.furio
+    type: string
+    default: '4px solid $rollover4-furio-titleColor'
+
+  plugin.bootstrap_package.settings.scss.rollover4-furio-maskBgColor:
+    label: '$rollover4-furio-maskBgColor'
+    description: 'Mask background color'
+    category: Rollovercollection4.furio
+    type: string
+    default: 'rgba(0,80,145, 0.7)'
+
+  plugin.bootstrap_package.settings.scss.rollover4-furio-maskBgROColor:
+    label: '$rollover4-furio-maskBgROColor'
+    description: 'Mask background rollover color'
+    category: Rollovercollection4.furio
+    type: string
+    default: 'rgba(0,80,145, 0)'
+
+  plugin.bootstrap_package.settings.scss.rollover4-uccio-maxBlockWidth:
+    label: '$rollover4-uccio-maxBlockWidth'
+    description: 'Max block width (px or %)'
+    category: Rollovercollection4.uccio
+    type: string
+    default: '100%'
+
+  plugin.bootstrap_package.settings.scss.rollover4-uccio-titleColor:
+    label: '$rollover4-uccio-titleColor'
+    description: 'Title color'
+    category: Rollovercollection4.uccio
+    type: string
+    default: 'white'
+
+  plugin.bootstrap_package.settings.scss.rollover4-uccio-titleSize:
+    label: '$rollover4-uccio-titleSize'
+    description: 'Title font size'
+    category: Rollovercollection4.uccio
+    type: string
+    default: '24px'
+
+  plugin.bootstrap_package.settings.scss.rollover4-uccio-titleWeight:
+    label: '$rollover4-uccio-titleWeight'
+    description: 'Title weight'
+    category: Rollovercollection4.uccio
+    type: string
+    default: '700'
+
+  plugin.bootstrap_package.settings.scss.rollover4-uccio-titleBgColor:
+    label: '$rollover4-uccio-titleBgColor'
+    description: 'Title background color'
+    category: Rollovercollection4.uccio
+    type: string
+    default: 'transparent'
+
+  plugin.bootstrap_package.settings.scss.rollover4-uccio-captionSize:
+    label: '$rollover4-uccio-captionSize'
+    description: 'Caption font size'
+    category: Rollovercollection4.uccio
+    type: string
+    default: '14px'
+
+  plugin.bootstrap_package.settings.scss.rollover4-uccio-captionColor:
+    label: '$rollover4-uccio-captionColor'
+    description: 'Caption color'
+    category: Rollovercollection4.uccio
+    type: string
+    default: '#666'
+
+  plugin.bootstrap_package.settings.scss.rollover4-uccio-border:
+    label: '$rollover4-uccio-border'
+    description: 'Border properties'
+    category: Rollovercollection4.uccio
+    type: string
+    default: '4px solid $rollover4-uccio-titleColor'
+
+  plugin.bootstrap_package.settings.scss.rollover4-uccio-maskBgColor:
+    label: '$rollover4-uccio-maskBgColor'
+    description: 'Mask background color'
+    category: Rollovercollection4.uccio
+    type: string
+    default: 'rgba(0,80,145, 0)'
+
+  plugin.bootstrap_package.settings.scss.rollover4-uccio-maskBgROColor:
+    label: '$rollover4-uccio-maskBgROColor'
+    description: 'Mask background rollover color'
+    category: Rollovercollection4.uccio
+    type: string
+    default: 'rgba(0,80,145, 0.7)'
+
+  plugin.bootstrap_package.settings.scss.rollover4-ettore-maxBlockWidth:
+    label: '$rollover4-ettore-maxBlockWidth'
+    description: 'Max block width (px or %)'
+    category: Rollovercollection4.ettore
+    type: string
+    default: '100%'
+
+  plugin.bootstrap_package.settings.scss.rollover4-ettore-titleColor:
+    label: '$rollover4-ettore-titleColor'
+    description: 'Title color'
+    category: Rollovercollection4.ettore
+    type: string
+    default: '#2fbde4'
+
+  plugin.bootstrap_package.settings.scss.rollover4-ettore-titleSize:
+    label: '$rollover4-ettore-titleSize'
+    description: 'Title font size'
+    category: Rollovercollection4.ettore
+    type: string
+    default: '32px'
+
+  plugin.bootstrap_package.settings.scss.rollover4-ettore-titleWeight:
+    label: '$rollover4-ettore-titleWeight'
+    description: 'Title weight'
+    category: Rollovercollection4.ettore
+    type: string
+    default: '700'
+
+  plugin.bootstrap_package.settings.scss.rollover4-ettore-captionSize:
+    label: '$rollover4-ettore-captionSize'
+    description: 'Caption font size'
+    category: Rollovercollection4.ettore
+    type: string
+    default: '14px'
+
+  plugin.bootstrap_package.settings.scss.rollover4-ettore-captionColor:
+    label: '$rollover4-ettore-captionColor'
+    description: 'Caption color'
+    category: Rollovercollection4.ettore
+    type: string
+    default: '#666'
+
+  plugin.bootstrap_package.settings.scss.rollover4-ettore-iconSize:
+    label: '$rollover4-ettore-iconSize'
+    description: 'Icon size px or percent, used for width and heightproperties'
+    category: Rollovercollection4.ettore
+    type: string
+    default: '30%'
+
+  plugin.bootstrap_package.settings.scss.rollover4-ettore-color1:
+    label: '$rollover4-ettore-color1'
+    description: 'Color1'
+    category: Rollovercollection4.ettore
+    type: string
+    default: '#2fbde4'
+
+  plugin.bootstrap_package.settings.scss.rollover4-ettore-color2:
+    label: '$rollover4-ettore-color2'
+    description: 'Color2'
+    category: Rollovercollection4.ettore
+    type: string
+    default: '#005091'
+
+  plugin.bootstrap_package.settings.scss.rollover4-ettore-blockBorder:
+    label: '$rollover4-ettore-blockBorder'
+    description: 'Block border'
+    category: Rollovercollection4.ettore
+    type: string
+    default: '1px solid #ddd'
+
+  plugin.bootstrap_package.settings.scss.rollover4-ettore-imageBorder:
+    label: '$rollover4-ettore-imageBorder'
+    description: 'Image border'
+    category: Rollovercollection4.ettore
+    type: string
+    default: '8px solid $rollover4-ettore-color1'
+
+  plugin.bootstrap_package.settings.scss.rollover4-ettore-imageROBorder:
+    label: '$rollover4-ettore-imageROBorder'
+    description: 'Image rollover border'
+    category: Rollovercollection4.ettore
+    type: string
+    default: '8px solid white'
+
+  plugin.bootstrap_package.settings.scss.rollover4-ettore-gradient:
+    label: '$rollover4-ettore-gradient'
+    description: 'Gradient properties'
+    category: Rollovercollection4.ettore
+    type: string
+    default: 'rgba(0, 0, 0, 0) linear-gradient(to bottom, $rollover4-ettore-color1 0%,  $rollover4-ettore-color2 100%) repeat scroll 0 0'
+
+  plugin.bootstrap_package.settings.scss.rollover4-selma-maxBlockWidth:
+    label: '$rollover4-selma-maxBlockWidth'
+    description: 'Max block width (px or %)'
+    category: Rollovercollection4.selma
+    type: string
+    default: '100%'
+
+  plugin.bootstrap_package.settings.scss.rollover4-selma-titleColor:
+    label: '$rollover4-selma-titleColor'
+    description: 'Title color'
+    category: Rollovercollection4.selma
+    type: string
+    default: 'orange'
+
+  plugin.bootstrap_package.settings.scss.rollover4-selma-titleSize:
+    label: '$rollover4-selma-titleSize'
+    description: 'Title font size'
+    category: Rollovercollection4.selma
+    type: string
+    default: '28px'
+
+  plugin.bootstrap_package.settings.scss.rollover4-selma-titleWeight:
+    label: '$rollover4-selma-titleWeight'
+    description: 'Title weight'
+    category: Rollovercollection4.selma
+    type: string
+    default: '700'
+
+  plugin.bootstrap_package.settings.scss.rollover4-selma-captionSize:
+    label: '$rollover4-selma-captionSize'
+    description: 'Caption font size'
+    category: Rollovercollection4.selma
+    type: string
+    default: '16px'
+
+  plugin.bootstrap_package.settings.scss.rollover4-selma-captionColor:
+    label: '$rollover4-selma-captionColor'
+    description: 'Caption color'
+    category: Rollovercollection4.selma
+    type: string
+    default: '#666'
+
+  plugin.bootstrap_package.settings.scss.rollover4-selma-linkColor:
+    label: '$rollover4-selma-linkColor'
+    description: 'Link color'
+    category: Rollovercollection4.selma
+    type: string
+    default: 'white'
+
+  plugin.bootstrap_package.settings.scss.rollover4-selma-linkROColor:
+    label: '$rollover4-selma-linkROColor'
+    description: 'Link rollover color'
+    category: Rollovercollection4.selma
+    type: string
+    default: 'black'
+
+  plugin.bootstrap_package.settings.scss.rollover4-selma-linkSize:
+    label: '$rollover4-selma-linkSize'
+    description: 'Link font size'
+    category: Rollovercollection4.selma
+    type: string
+    default: '12px'
+
+  plugin.bootstrap_package.settings.scss.rollover4-selma-linkWeight:
+    label: '$rollover4-selma-linkWeight'
+    description: 'Link font weight'
+    category: Rollovercollection4.selma
+    type: string
+    default: '700'
+
+  plugin.bootstrap_package.settings.scss.rollover4-selma-linkBgColor:
+    label: '$rollover4-selma-linkBgColor'
+    description: 'Link background color'
+    category: Rollovercollection4.selma
+    type: string
+    default: 'orange'
+
+  plugin.bootstrap_package.settings.scss.rollover4-selma-imageSize:
+    label: '$rollover4-selma-imageSize'
+    description: 'Substitute with ''unset'' to disable animation'
+    category: Rollovercollection4.selma
+    type: string
+    default: '500px'
+
+  plugin.bootstrap_package.settings.scss.rollover4-selma-imageROSize:
+    label: '$rollover4-selma-imageROSize'
+    description: 'Keep empty to disable animation'
+    category: Rollovercollection4.selma
+    type: string
+    default: '460px'
+
+  plugin.bootstrap_package.settings.scss.rollover4-mariucci-maxBlockWidth:
+    label: '$rollover4-mariucci-maxBlockWidth'
+    description: 'Max block width (px or %)'
+    category: Rollovercollection4.mariucci
+    type: string
+    default: '100%'
+
+  plugin.bootstrap_package.settings.scss.rollover4-mariucci-altBgColor:
+    label: '$rollover4-mariucci-altBgColor'
+    description: 'First block background color'
+    category: Rollovercollection4.mariucci
+    type: string
+    default: '#6ddce3'
+
+  plugin.bootstrap_package.settings.scss.rollover4-mariucci-altTextColor:
+    label: '$rollover4-mariucci-altTextColor'
+    description: 'First block text color'
+    category: Rollovercollection4.mariucci
+    type: string
+    default: 'white'
+
+  plugin.bootstrap_package.settings.scss.rollover4-mariucci-titleColor:
+    label: '$rollover4-mariucci-titleColor'
+    description: 'Title color'
+    category: Rollovercollection4.mariucci
+    type: string
+    default: 'black'
+
+  plugin.bootstrap_package.settings.scss.rollover4-mariucci-titleBgColor:
+    label: '$rollover4-mariucci-titleBgColor'
+    description: 'Title background color'
+    category: Rollovercollection4.mariucci
+    type: string
+    default: '#00a2ad'
+
+  plugin.bootstrap_package.settings.scss.rollover4-mariucci-titleSize:
+    label: '$rollover4-mariucci-titleSize'
+    description: 'Title font size'
+    category: Rollovercollection4.mariucci
+    type: string
+    default: '24px'
+
+  plugin.bootstrap_package.settings.scss.rollover4-mariucci-titleWeight:
+    label: '$rollover4-mariucci-titleWeight'
+    description: 'Title weight'
+    category: Rollovercollection4.mariucci
+    type: string
+    default: '700'
+
+  plugin.bootstrap_package.settings.scss.rollover4-mariucci-captionSize:
+    label: '$rollover4-mariucci-captionSize'
+    description: 'Caption font size'
+    category: Rollovercollection4.mariucci
+    type: string
+    default: '16px'
+
+  plugin.bootstrap_package.settings.scss.rollover4-mariucci-captionColor:
+    label: '$rollover4-mariucci-captionColor'
+    description: 'Caption color'
+    category: Rollovercollection4.mariucci
+    type: string
+    default: '#666'
+
+  plugin.bootstrap_package.settings.scss.rollover4-mariucci-linkColor1:
+    label: '$rollover4-mariucci-linkColor1'
+    description: 'Button color1'
+    category: Rollovercollection4.mariucci
+    type: string
+    default: 'white'
+
+  plugin.bootstrap_package.settings.scss.rollover4-mariucci-linkColor2:
+    label: '$rollover4-mariucci-linkColor2'
+    description: 'Button color2'
+    category: Rollovercollection4.mariucci
+    type: string
+    default: '#00a2ad'
+
+  plugin.bootstrap_package.settings.scss.rollover4-mariucci-linkSize:
+    label: '$rollover4-mariucci-linkSize'
+    description: 'Button font size'
+    category: Rollovercollection4.mariucci
+    type: string
+    default: '16px'
+
+  plugin.bootstrap_package.settings.scss.rollover4-mariucci-linkWeight:
+    label: '$rollover4-mariucci-linkWeight'
+    description: 'Button font weight'
+    category: Rollovercollection4.mariucci
+    type: string
+    default: '700'
+
+  plugin.bootstrap_package.settings.scss.rollover4-mariucci-imageSize:
+    label: '$rollover4-mariucci-imageSize'
+    description: 'Icon circle image (for width and height)'
+    category: Rollovercollection4.mariucci
+    type: string
+    default: '100px'
+
+  plugin.bootstrap_package.settings.scss.rollover4-nevio-maxBlockWidth:
+    label: '$rollover4-nevio-maxBlockWidth'
+    description: 'Max block width (px or %)'
+    category: Rollovercollection4.nevio
+    type: string
+    default: '100%'
+
+  plugin.bootstrap_package.settings.scss.rollover4-nevio-blockPadding:
+    label: '$rollover4-nevio-blockPadding'
+    description: 'Whole block padding'
+    category: Rollovercollection4.nevio
+    type: string
+    default: '6px'
+
+  plugin.bootstrap_package.settings.scss.rollover4-nevio-blockBorder:
+    label: '$rollover4-nevio-blockBorder'
+    description: 'Block border size and color'
+    category: Rollovercollection4.nevio
+    type: string
+    default: '1px solid #005091'
+
+  plugin.bootstrap_package.settings.scss.rollover4-nevio-blockBorderRadius:
+    label: '$rollover4-nevio-blockBorderRadius'
+    description: 'Block radius'
+    category: Rollovercollection4.nevio
+    type: string
+    default: '8px'
+
+  plugin.bootstrap_package.settings.scss.rollover4-nevio-blockBgColor:
+    label: '$rollover4-nevio-blockBgColor'
+    description: 'Block background color'
+    category: Rollovercollection4.nevio
+    type: string
+    default: '$primary'
+
+  plugin.bootstrap_package.settings.scss.rollover4-nevio-blockBgROColor:
+    label: '$rollover4-nevio-blockBgROColor'
+    description: 'Block hover background color'
+    category: Rollovercollection4.nevio
+    type: string
+    default: 'lighten($primary,8)'
+
+  plugin.bootstrap_package.settings.scss.rollover4-nevio-textColor:
+    label: '$rollover4-nevio-textColor'
+    description: 'Text color applied to P tag'
+    category: Rollovercollection4.nevio
+    type: string
+    default: 'white'
+
+  plugin.bootstrap_package.settings.scss.rollover4-nevio-allROColor:
+    label: '$rollover4-nevio-allROColor'
+    description: 'Text inside block, color when hover'
+    category: Rollovercollection4.nevio
+    type: string
+    default: 'white'
+
+  plugin.bootstrap_package.settings.scss.rollover4-nevio-blockMarginBottom:
+    label: '$rollover4-nevio-blockMarginBottom'
+    description: 'Margin bottom to separate the items'
+    category: Rollovercollection4.nevio
+    type: string
+    default: '12px'
+
+  plugin.bootstrap_package.settings.scss.rollover4-nevio-titleColor:
+    label: '$rollover4-nevio-titleColor'
+    description: 'Title color'
+    category: Rollovercollection4.nevio
+    type: string
+    default: '#005091'
+
+  plugin.bootstrap_package.settings.scss.rollover4-nevio-titleSize:
+    label: '$rollover4-nevio-titleSize'
+    description: 'Title font size'
+    category: Rollovercollection4.nevio
+    type: string
+    default: '16px'
+
+  plugin.bootstrap_package.settings.scss.rollover4-nevio-titleWeight:
+    label: '$rollover4-nevio-titleWeight'
+    description: 'Title weight'
+    category: Rollovercollection4.nevio
+    type: string
+    default: '500'
+
+  plugin.bootstrap_package.settings.scss.rollover4-nevio-imageSize:
+    label: '$rollover4-nevio-imageSize'
+    description: 'Icon size, for height (width: auto)'
+    category: Rollovercollection4.nevio
+    type: string
+    default: '60px'
+
+  plugin.bootstrap_package.settings.scss.rollover4-nevio-imageBorder:
+    label: '$rollover4-nevio-imageBorder'
+    description: 'Image border'
+    category: Rollovercollection4.nevio
+    type: string
+    default: '4px solid white'
+
+  plugin.bootstrap_package.settings.scss.rollover4-nevio-imageBorderRadius:
+    label: '$rollover4-nevio-imageBorderRadius'
+    description: 'Image border radius (ie. 50%, 0%, 20%)'
+    category: Rollovercollection4.nevio
+    type: string
+    default: '50%'
