@@ -1,41 +1,21 @@
-
 <?php
 
-/***************************************************************
- * Extension Manager/Repository config file for ext "rollovercollection4".
- *
- * Auto generated 05-11-2023 14:56
- *
- * Manual updates:
- * Only the data in the array - everything else is removed by next
- * writing. "version" and "dependencies" must not be touched!
- ***************************************************************/
-
-$EM_CONF[$_EXTKEY] = array (
-  'title' => 'image rollover collection 4 - BLOCKS',
-  'description' => 'only for bootstrap5 + boostrap package v.12+ - cool multicolumn rendering with seven boxes layouts for cType textmedia, media, textpic and images; bootstrap package needed. Useful for menu, gallery, other. Highly customizable.',
-  'category' => 'plugin',
-  'version' => '8.0.4',
-  'state' => 'stable',
-  'uploadfolder' => false,
-  'clearcacheonload' => true,
-  'author' => 'Giulia Tuveri',
-  'author_email' => 'gt@specialistaweb.it',
-  'author_company' => 'Specialistaweb',
-  'clearCacheOnLoad' => '1',
-  'constraints' => 
-  array (
-    'depends' => 
-    array (
-      'typo3' => '12.0.0-13.4.99',
-      'bootstrap_package' => '12.0.0-15.0.99',
-    ),
-    'conflicts' => 
-    array (
-    ),
-    'suggests' => 
-    array (
-    ),
-  ),
-);
-
+$EM_CONF[$_EXTKEY] = [
+    'title' => 'image rollover collection 4 - BLOCKS',
+    'description' => 'BLOCKS: multicolumn rendering with seven box layouts for the content elements textmedia, media, textpic and image. Requires bootstrap_package (Bootstrap 5). Useful for menus, galleries and teasers. Highly customizable.',
+    'category' => 'fe',
+    'version' => '9.0.0',
+    'state' => 'stable',
+    'author' => 'Giulia Tuveri',
+    'author_email' => 'gt@specialistaweb.it',
+    'author_company' => 'Specialistaweb',
+    'constraints' => [
+        'depends' => [
+            'php' => '8.2.0-8.5.99',
+            'typo3' => '13.4.0-14.4.99',
+            'bootstrap_package' => '16.0.0-16.99.99',
+        ],
+        'conflicts' => [],
+        'suggests' => [],
+    ],
+];
