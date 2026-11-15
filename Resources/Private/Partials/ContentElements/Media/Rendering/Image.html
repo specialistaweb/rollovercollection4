@@ -1,0 +1,17 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:comment>
+    Image of a BLOCKS item. The picture/img structure is kept because the theme styles rely on it.
+    settings.R4imageMaxWidth limits the delivered image width (0 = original file, no limit).
+</f:comment>
+<f:variable name="maxWidth">{settings.R4imageMaxWidth as integer}</f:variable>
+<picture>
+    <f:if condition="{maxWidth} > 0">
+        <f:then>
+            <f:image image="{file}" maxWidth="{maxWidth}" loading="lazy" alt="{file.alternative}" title="{file.title -> f:format.stripTags()}" />
+        </f:then>
+        <f:else>
+            <f:image image="{file}" loading="lazy" alt="{file.alternative}" title="{file.title -> f:format.stripTags()}" />
+        </f:else>
+    </f:if>
+</picture>
+</html>

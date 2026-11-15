@@ -1,0 +1,160 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:comment>
+    Rollovercollection 4 - BLOCKS: one item per image, markup selected by tt_content.layout.
+
+    2851 TERGESTE | 2852 FURIO | 2853 UCCIO | 2854 ETTORE | 2855 SELMA | 2856 MARIUCCI | 2857 NEVIO
+
+    Fields of the file reference used by the layouts:
+    title = heading, description = text, alternative = button label (where available), link = target.
+    This partial is only reached for the layouts above (see setup.typoscript), every other layout
+    is rendered by bootstrap_package itself.
+</f:comment>
+<f:variable name="link" value="{file.properties.link}" />
+<f:variable name="linkTitle" value="{file.title -> f:format.stripTags()}" />
+<f:variable name="partialArguments" value="{file: file, settings: settings}" />
+
+<f:switch expression="{data.layout}">
+
+    <f:case value="2851">
+        <f:comment>BLOCK #1 - TERGESTE</f:comment>
+        <div class="rollovercollection4 block1 fullheight">
+            <figure class="image view{data.layout} view{data.layout}-type">
+                <f:link.typolink parameter="{link}" title="{linkTitle}">
+                    <f:render partial="Media/Rendering/Image" arguments="{partialArguments}" />
+                </f:link.typolink>
+                <figcaption class="caption" style="position: relative;">
+                    <h2><f:render partial="Media/Rendering/Title" arguments="{partialArguments}" /></h2>
+                    <f:render partial="Media/Rendering/Description" arguments="{partialArguments}" />
+                </figcaption>
+            </figure>
+            <f:if condition="{file.alternative}">
+                <div class="inset-button">
+                    <div class="button">
+                        <f:link.typolink parameter="{link}" title="{linkTitle}" class="btn btn-details">
+                            {file.alternative}
+                        </f:link.typolink>
+                    </div>
+                </div>
+            </f:if>
+        </div>
+    </f:case>
+
+    <f:case value="2852">
+        <f:comment>BLOCK #2 - FURIO</f:comment>
+        <f:render section="Overlay" arguments="{file: file, data: data, link: link, linkTitle: linkTitle, partialArguments: partialArguments}" />
+    </f:case>
+
+    <f:case value="2853">
+        <f:comment>BLOCK #3 - UCCIO (same markup as FURIO, different styles)</f:comment>
+        <f:render section="Overlay" arguments="{file: file, data: data, link: link, linkTitle: linkTitle, partialArguments: partialArguments}" />
+    </f:case>
+
+    <f:case value="2854">
+        <f:comment>BLOCK #4 - ETTORE</f:comment>
+        <div class="view{data.layout} fullheight">
+            <div class="image">
+                <f:link.typolink parameter="{link}" title="{linkTitle}">
+                    <f:render partial="Media/Rendering/Image" arguments="{partialArguments}" />
+                </f:link.typolink>
+            </div>
+            <div class="info-view{data.layout}">
+                <h5><f:render partial="Media/Rendering/Title" arguments="{partialArguments}" /></h5>
+                <f:render partial="Media/Rendering/Description" arguments="{partialArguments}" />
+            </div>
+        </div>
+    </f:case>
+
+    <f:case value="2855">
+        <f:comment>BLOCK #5 - SELMA</f:comment>
+        <div class="rollovercollection4 selma fullheight">
+            <figure class="image view{data.layout} view{data.layout}-type">
+                <f:link.typolink parameter="{link}" title="{linkTitle}">
+                    <f:render partial="Media/Rendering/Image" arguments="{partialArguments}" />
+                </f:link.typolink>
+                <figcaption class="caption" style="position: relative;">
+                    <h2><f:render partial="Media/Rendering/Title" arguments="{partialArguments}" /></h2>
+                    <f:render partial="Media/Rendering/Description" arguments="{partialArguments}" />
+                </figcaption>
+                <f:if condition="{file.alternative}">
+                    <div class="inset-button">
+                        <f:link.typolink parameter="{link}" title="{linkTitle}" class="btn btn-details">
+                            <div class="button">
+                                <span class="link">{file.alternative}</span>
+                                <span class="symbol">&gt;</span>
+                            </div>
+                        </f:link.typolink>
+                    </div>
+                </f:if>
+            </figure>
+        </div>
+    </f:case>
+
+    <f:case value="2856">
+        <f:comment>BLOCK #6 - MARIUCCI</f:comment>
+        <ul class="planContainer fullheight">
+            <li class="alternative">
+                <p>{file.alternative}</p>
+            </li>
+            <li class="title">
+                <p><f:render partial="Media/Rendering/Title" arguments="{partialArguments}" /></p>
+            </li>
+            <li class="options-container fullheight">
+                <ul class="options">
+                    <li class="image">
+                        <f:link.typolink parameter="{link}" title="{linkTitle}">
+                            <f:render partial="Media/Rendering/Image" arguments="{partialArguments}" />
+                        </f:link.typolink>
+                    </li>
+                    <li class="text"><f:render partial="Media/Rendering/Description" arguments="{partialArguments}" /></li>
+                </ul>
+            </li>
+            <li class="button-container">
+                <f:link.typolink parameter="{link}" title="{linkTitle}" class="button btn btn-more">
+                    <f:cObject typoscriptObjectPath="lib.rollovercollection4.label.readMore" />
+                </f:link.typolink>
+            </li>
+        </ul>
+    </f:case>
+
+    <f:case value="2857">
+        <f:comment>BLOCK #7 - NEVIO</f:comment>
+        <f:link.typolink parameter="{link}" title="{linkTitle}">
+            <div class="services-item">
+                <p>
+                    <f:render partial="Media/Rendering/Image" arguments="{partialArguments}" />
+                    {linkTitle -> f:format.htmlspecialchars(doubleEncode: 0)}
+                </p>
+            </div>
+        </f:link.typolink>
+    </f:case>
+
+</f:switch>
+
+<f:section name="Overlay">
+    <figure class="image view{data.layout}">
+        <div class="img-block2">
+            <div class="box h-block2">
+                <f:if condition="{link}">
+                    <f:link.typolink parameter="{link}" title="{linkTitle}">
+                        <f:render partial="Media/Rendering/Image" arguments="{partialArguments}" />
+                    </f:link.typolink>
+                </f:if>
+            </div>
+            <f:if condition="{link}">
+                <figcaption class="overlay{data.layout}">
+                    <div class="valign-ro">
+                        <div class="vcontainer-ro">
+                            <f:link.typolink parameter="{link}" title="{linkTitle}">
+                                <h2><f:render partial="Media/Rendering/Title" arguments="{partialArguments}" /></h2>
+                            </f:link.typolink>
+                        </div>
+                    </div>
+                </figcaption>
+            </f:if>
+        </div>
+    </figure>
+    <div class="caption caption-view{data.layout}" style="position: relative;">
+        <f:render partial="Media/Rendering/Description" arguments="{partialArguments}" />
+    </div>
+</f:section>
+</html>
