@@ -1,11 +1,15 @@
-figure.2851.image a > img  {
-  width: 100%;
-}
+// DISABLED in 9.0.0: the selector is invalid or can never match, so browsers never applied this rule.
+// It is kept here for reference: fix the selector to enable it (see README, "Inactive CSS rules").
+// figure.2851.image a > img  {
+//   width: 100%;
+// }
 
-.gallery-item.gallery-item-size-4.rollover3.rollover4-layout2851 {
-    padding-left: 0;
-    padding-right: 0;
-}
+// DISABLED in 9.0.0: the selector is invalid or can never match, so browsers never applied this rule.
+// It is kept here for reference: fix the selector to enable it (see README, "Inactive CSS rules").
+// .gallery-item.gallery-item-size-4.rollover3.rollover4-layout2851 {
+//     padding-left: 0;
+//     padding-right: 0;
+// }
 
 .rollovercollection4.block1.fullheight {
     display: flex;
@@ -24,10 +28,6 @@ figure.2851.image a > img  {
   max-width: $rollover4-tergeste-maxBlockWidth;
   height: inherit;
   margin-bottom: 40px;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
     transition: all 1s ease;
 }
 
@@ -77,10 +77,6 @@ figure.2851.image a > img  {
 width: $rollover4-tergeste-imageSize;
 height: auto; 
 max-width: unset !important;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
     transition: all 1s ease;
 
 }
@@ -93,10 +89,12 @@ max-width: unset !important;
     overflow: hidden;
 }
 
-rollovercollection4.block1 figcaption.caption p {
-  padding: 34px 20px;
-  padding-bottom: 20px;
-}
+// DISABLED in 9.0.0: the selector is invalid or can never match, so browsers never applied this rule.
+// It is kept here for reference: fix the selector to enable it (see README, "Inactive CSS rules").
+// rollovercollection4.block1 figcaption.caption p {
+//   padding: 34px 20px;
+//   padding-bottom: 20px;
+// }
 
 
 .rollovercollection4.block1 .inset-button {

@@ -1,6 +1,8 @@
-figure.2855.image a > img  {
-  width: 100%;
-}
+// DISABLED in 9.0.0: the selector is invalid or can never match, so browsers never applied this rule.
+// It is kept here for reference: fix the selector to enable it (see README, "Inactive CSS rules").
+// figure.2855.image a > img  {
+//   width: 100%;
+// }
 
 .rollovercollection4.selma {
   position: relative;
@@ -12,10 +14,6 @@ figure.2855.image a > img  {
   max-width: $rollover4-selma-maxBlockWidth;
   height: inherit;
   margin-bottom: 40px;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
     transition: none;
 }
 .rollovercollection4.selma figcaption.caption {
@@ -59,10 +57,6 @@ figure.2855.image a > img  {
 width: $rollover4-selma-imageSize;
 height: auto; 
 max-width: unset !important;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
     transition: all 1s ease;
 }
 

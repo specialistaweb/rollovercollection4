@@ -41,17 +41,21 @@ div.vcontainer-ro {
 }
 
 
-@media screen and (max-width: 1024px) {
- .gallery-row.rollover4 gallery-item.rollover4 {
-    --gallery-columns: 3;
- }
-}
+// DISABLED in 9.0.0: the selector is invalid or can never match, so browsers never applied this rule.
+// It is kept here for reference: fix the selector to enable it (see README, "Inactive CSS rules").
+// @media screen and (max-width: 1024px) {
+//  .gallery-row.rollover4 gallery-item.rollover4 {
+//     --gallery-columns: 3;
+//  }
+// }
 
-@media screen and (max-width: 720px) {
- .gallery-row.rollover4 gallery-item.rollover4 {
-    --gallery-columns: 2;
- }
-}
+// DISABLED in 9.0.0: the selector is invalid or can never match, so browsers never applied this rule.
+// It is kept here for reference: fix the selector to enable it (see README, "Inactive CSS rules").
+// @media screen and (max-width: 720px) {
+//  .gallery-row.rollover4 gallery-item.rollover4 {
+//     --gallery-columns: 2;
+//  }
+// }
 
 @media screen and (max-width: 480px) {
  .gallery-row.rollover4 .gallery-item.rollover4 {

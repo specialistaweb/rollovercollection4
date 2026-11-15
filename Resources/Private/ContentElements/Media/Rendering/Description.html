@@ -1,0 +1,16 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:comment>
+    Description (caption) of a BLOCKS item, wrapped in a paragraph.
+    R4captionRawdataOutput = 1: HTML typed by the editor is kept, but passed through the TYPO3 core
+    HTML sanitizer (script tags, event handlers and javascript: links are removed).
+    R4captionRawdataOutput = 0: plain text only.
+</f:comment>
+<f:if condition="{file.description}">
+    <p>
+        <f:if condition="{settings.R4captionRawdataOutput} == 1">
+            <f:then><f:sanitize.html>{file.description}</f:sanitize.html></f:then>
+            <f:else>{file.description -> f:format.stripTags() -> f:format.htmlspecialchars(doubleEncode: 0)}</f:else>
+        </f:if>
+    </p>
+</f:if>
+</html>
